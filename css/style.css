@@ -1,0 +1,125 @@
+
+h1{
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+}
+
+.w , .a , .s , .d{
+    width: 80px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    position: relative;
+    border: 2px solid black;
+    width: 1500px;
+    height: 950px;
+}
+
+.pg{
+    background-image: url(../img/scottpilgrim_multiple.png);
+    position: absolute;
+    
+    width: calc(864px/8);
+    height: calc(280px/2);
+}
+
+.up{
+    background-image: url(../img/scottpilgrim_multiple.png);
+    position: absolute;
+    
+    width: calc(864px/8);
+    height: calc(280px/2);
+    background-position:top left;
+    transition: all 0.8s linear;
+    animation: walking ;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+}
+@keyframes walking {
+    
+    from {
+        background-position-x:  0
+    }
+    to {
+        background-position-x: -864px;
+    }
+}
+
+
+.right{
+    background-image: url(../img/scottpilgrim_multiple.png);
+    position: absolute;
+    
+    width: calc(864px/8);
+    height: calc(280px/2);
+    background-position:top left;
+    transition: all 0.8s linear;
+    animation: walking ;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+}
+@keyframes walking {
+    
+    from {
+        background-position-x:  0
+    }
+    to {
+        background-position-x: -864px;
+    }
+}
+
+.left{
+    background-image: url(../img/scottpilgrim_multiple.png);
+    position: absolute;
+    
+    width: calc(864px/8);
+    height: calc(280px/2);
+    background-position:bottom ;
+    transition: all 0.8s linear;
+    animation: walkingL ;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+}
+@keyframes walkingL {
+    
+    from {
+        background-position: bottom left ;
+        background-position-x:  0
+    }
+    to {
+        background-position: bottom right;
+        background-position-x: 864px;
+    }
+}
+
+.down{
+    background-image: url(../img/scottpilgrim_multiple.png);
+    position: absolute;
+    
+    width: calc(864px/8);
+    height: calc(280px/2);
+    background-position:bottom ;
+    transition: all 0.8s linear;
+    animation: walkingL ;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+}
+@keyframes walkingL {
+    
+    from {
+        background-position: bottom left ;
+        background-position-x:  0
+    }
+    to {
+        background-position: bottom right;
+        background-position-x: 864px;
+    }
+}
